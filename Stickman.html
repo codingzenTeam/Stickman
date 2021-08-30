@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>SVG</title>
+<style>
+/*    .A1{
+        animation-name: bla;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes bla{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }*/
+</style>
+</head>
+<body>
+<svg height="300" width="300" style="background-color: black">
+<circle cx="150" cy="50" r="30" style="stroke: white; stroke-width: 4" />
+<polyline points="80,120 100,80 150,120 " style="stroke: white; stroke-width: 4" /> 
+    
+<polyline points="150,120 200,80 220,120" style="stroke: white; stroke-width: 4" id="A1" />  
+<polyline points="170,270 150,270 150,180 190,135 190,210 210,210" style="stroke: white; stroke-width: 4"> 
+ <animate dur="1s" repeatCount="indefinite" attributeName="points" values="170,270 150,270 150,180 190,135 190,210 210,210;170,270 150,270 150,180 190,135 210,210 220,180; 170,270 150,270 150,180 190,135 240,175 260,150; 170,270 150,270 150,180 190,135 210,210 220,180; 170,270 150,270 150,180 190,135 190,210 210,210;" />  
+</polyline>
+<line x1="150" y1="80" x2="150" y2="180" style="stroke: white; stroke-width: 4" />
+</svg>
+  
+</body>
+</html>
